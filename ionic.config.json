@@ -1,0 +1,8 @@
+{
+  "name": "AccionCiudadana",
+  "app_id": "f664aa6b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -3,16 +3,15 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Promociones</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-list>
+    <ion-item text-center><img [src]="user.imagen">
+    </ion-item>
+    <ion-item text-center>{{user.nombre}}</ion-item>
+    <ion-item><button ion-button (click)="salir()" color="danger" block>Salir</button></ion-item>
+  </ion-list>
 </ion-content>

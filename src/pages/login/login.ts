@@ -10,6 +10,7 @@ import {IntroPage} from "../intro/intro";
 
 import { Platform } from 'ionic-angular';
 import { Facebook } from '@ionic-native/facebook';
+import {CallNumber} from "@ionic-native/call-number";
 /**
  * Generated class for the LoginPage page.
  *
@@ -27,6 +28,7 @@ export class LoginPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
               private afAuth: AngularFireAuth,
               public storage: Storage,
+              private callNumber: CallNumber,
               public actionSheetCtrl: ActionSheetController,
               public usuarioProv: UsuarioProvider, private fb: Facebook, private platform: Platform) {
   }
@@ -95,6 +97,9 @@ export class LoginPage {
         {
           text: 'Llamar',
           handler: () => {
+            this.callNumber.callNumber("+521557901692", true)
+              .then(res => console.log('Launched dialer!', res))
+              .catch(err => console.log('Error launching dialer', err));
             console.log('Archive clicked');
           }
         },

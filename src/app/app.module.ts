@@ -27,6 +27,7 @@ import {LoginPage} from "../pages/login/login";
 import { UsuarioProvider } from '../providers/usuario/usuario';
 
 import { Facebook } from '@ionic-native/facebook';
+import { CallNumber } from "@ionic-native/call-number";
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { Facebook } from '@ionic-native/facebook';
     AngularFireDatabase,
     UsuarioProvider,
     Facebook,
+    CallNumber,
     IonicStorageModule,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]

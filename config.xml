@@ -85,6 +85,7 @@
         <variable name="APP_ID" value="1874593139221187" />
         <variable name="APP_NAME" value="Accion Ciudadana" />
     </plugin>
+    <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="6.4.0" />
 </widget>
